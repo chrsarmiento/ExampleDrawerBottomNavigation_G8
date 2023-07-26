@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Desafio Latam</string>
+    <string name="open_drawer">Open Navigation Drawer</string>
+    <string name="close_drawer">Close Navigation Drawer</string>
+    <string name="home_title">Home</string>
+    <string name="share_title">Share</string>
+    <string name="setting_title">Settings</string>
+    <string name="profile_title">Profile</string>
+    <string name="logout_title">Logout</string>
+    <string name="company">Desafia2</string>
+    <string name="email_company">informaciones@desafia2.com</string>
+    <string name="title_home_fragment">HOME</string>
+    <string name="title_profile_fragment">PROFILE</string>
+    <string name="title_share_fragment">SHARE</string>
+    <string name="title_settings_fragment">SETTINGS</string>
+    <string name="titleText">titleText</string>
+</resources>

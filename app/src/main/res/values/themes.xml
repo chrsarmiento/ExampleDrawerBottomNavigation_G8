@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MenuDrawerBottomList_APP" parent="Theme.Material3.DayNight.NoActionBar">
+        <!--Primary colors-->
+        <item name="colorPrimary">@color/blue_400</item>
+        <item name="colorPrimaryVariant">@color/blue_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!--Secondary colors-->
+        <item name="colorSecondary">@color/green</item>
+        <item name="colorSecondaryVariant">@color/green</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+
+    </style>
+
+    <style name="Theme.MenuDrawerBottomList_APP" parent="Base.Theme.MenuDrawerBottomList_APP" />
+</resources>
