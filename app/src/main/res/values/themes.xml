@@ -12,7 +12,6 @@
         <item name="colorOnSecondary">@color/black</item>
 
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
-
     </style>
 
     <style name="Theme.MenuDrawerBottomList_APP" parent="Base.Theme.MenuDrawerBottomList_APP" />

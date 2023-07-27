@@ -24,12 +24,12 @@
     <ListView
         android:id="@+id/mainList"
         android:layout_width="0dp"
-        android:layout_height="match_parent"
+        android:layout_height="600dp"
         android:layout_margin="@dimen/margin_normal"
         app:layout_constraintTop_toBottomOf="@+id/txtTitleProfile"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         />
 
 

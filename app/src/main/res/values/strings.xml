@@ -6,6 +6,7 @@
     <string name="share_title">Share</string>
     <string name="setting_title">Settings</string>
     <string name="profile_title">Profile</string>
+    <string name="library_title">Library</string>
     <string name="logout_title">Logout</string>
     <string name="company">Desafia2</string>
     <string name="email_company">informaciones@desafia2.com</string>
