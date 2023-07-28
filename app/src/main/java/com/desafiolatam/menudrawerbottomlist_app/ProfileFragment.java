@@ -1,5 +1,6 @@
 package com.desafiolatam.menudrawerbottomlist_app;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -41,8 +42,10 @@ public class ProfileFragment extends Fragment {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                String marcaSeleccionada = adapter.getItem(i).toString();
                 Toast.makeText(adapterView.getContext(),"Elemento seleccionado: " +
-                        adapter.getItem(i).toString(),Toast.LENGTH_SHORT).show();
+                        marcaSeleccionada,Toast.LENGTH_SHORT).show();
+                enviarDatosActitity(marcaSeleccionada);
             }
         });
 
@@ -54,6 +57,16 @@ public class ProfileFragment extends Fragment {
         CustomAdapter adapter = new CustomAdapter();
         adapter.setValues(cargarLista());
         return adapter;
+    }
+
+    private void enviarDatosActitity(String texto){
+        Intent intent = new Intent(getContext(), DetailActivity.class);
+        Bundle bundle = new Bundle();
+        bundle.putString("marca",texto);
+        bundle.putDouble("precio",Math.random()*10000000);
+        intent.putExtras(bundle);
+        startActivity(intent);
+        //overridePendingTransition(R.anim.slide_left,R.anim.slide_left);
     }
 
     private class CustomAdapter extends BaseAdapter{

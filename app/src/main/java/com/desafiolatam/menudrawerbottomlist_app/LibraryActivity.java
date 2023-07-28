@@ -85,7 +85,11 @@ public class LibraryActivity extends AppCompatActivity {
         int itemId = item.getItemId();
         if (itemId == android.R.id.home){
             startActivity(new Intent(getApplicationContext(), MainActivity.class));
+            overridePendingTransition(R.anim.slide_left,R.anim.slide_left);
+
+            //finish();
             return true;
+
         }
         return super.onOptionsItemSelected(item);
     }
